@@ -13,6 +13,7 @@ public partial class VLogin : ContentPage
 
         string enteredUser = UserEntry.Text;
         string enteredPass = PassEntry.Text;
+        string dato=UserEntry.Text;
 
 
         for (int i = 0; i < users.Length; i++)
@@ -24,7 +25,7 @@ public partial class VLogin : ContentPage
                 DisplayAlert("Bienvenido", $"¡Bienvenido {users[i]}!", "Cerrar");
 
 
-                Navigation.PushAsync(new VRegistro());
+                Navigation.PushAsync(new VRegistro(dato));
                 return;
             }
         }

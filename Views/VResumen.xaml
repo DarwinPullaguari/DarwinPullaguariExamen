@@ -4,9 +4,103 @@
              x:Class="DarwinPullaguariExamen.Views.VResumen"
              Title="VResumen">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Label x:Name="LblDato"
+               TextColor="red"
+               FontSize="14"
+               HorizontalTextAlignment= "Start"/>
+        
+
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre" 
+       Grid.Row="0" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="Apellido" 
+       Grid.Row="1" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="VA" 
+       Grid.Row="2" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="Fecha" 
+       Grid.Row="3" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="Ciudad" 
+       Grid.Row="4" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="Monto Inicial" 
+       Grid.Row="5" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="Cuota Mensual" 
+       Grid.Row="6" Grid.Column="0" 
+       FontAttributes="Bold"/>
+            <Label Text="Pago total" 
+       Grid.Row="7" Grid.Column="0" 
+       FontAttributes="Bold"/>
+
+            <Entry x:Name="NombreEntry" 
+                   Grid.Row="0" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="ApellidoEntry" 
+                   Grid.Row="1" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="VAEntry" 
+                   Grid.Row="2" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="FechaEntry" 
+                   Grid.Row="3" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="CiudadEntry" 
+                   Grid.Row="4" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="MontoEntry" 
+                   Grid.Row="5" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="CuotaEntry" 
+                   Grid.Row="6" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="TotalEntry" 
+                   Grid.Row="7" Grid.Column="1" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+        </Grid>
+        
+        <Button Text="Cerrar sesión" 
+                Clicked="Button_Clicked"
+                BackgroundColor="Red"/>
+
+
+        
     </VerticalStackLayout>
 </ContentPage>
