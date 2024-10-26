@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DarwinPullaguariExamen.Views.VRegistro"
+             Title="VRegistro">
+    <VerticalStackLayout>
+        <Label 
+            Text="Registro"
+            TextColor="Blue"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+           
+        <Label
+            Text="Nombre"
+            FontSize="20"
+            FontAttributes="Bold"
+            TextColor="DarkOrange"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre" 
+                   Grid.Row="0" Grid.Column="0" />
+            <Entry x:Name="IngreseNombre" Placeholder="Ingrese Nombre"
+                   Grid.Row="0" Grid.Column="1"
+                   VerticalOptions="Center" HorizontalOptions="Center"
+                   />
+
+            <Label Text="Apellido" 
+                   Grid.Row="1" Grid.Column="0" />
+            <Entry x:Name="IngreseApellido" Placeholder="Ingrese Apellido"
+                   Grid.Row="1" Grid.Column="1"
+                   VerticalOptions="Center" HorizontalOptions="Center"
+                    />
+
+            
+            <Label x:Name="Voltiamperio" 
+                   Grid.Row="2" Grid.Column="0"
+                   VerticalOptions="Center" HorizontalOptions="Center"
+                   FontAttributes="Bold" TextColor="DarkOrange" />
+                   
+            <Picker x:Name="pkVoltiamperios"
+             Grid.Row="2" Grid.Column="1"
+            Title="Voltiamperio"
+            BackgroundColor="Orange"
+            FontAttributes="Bold"
+            TextColor="White">
+
+                        <Picker.Items>
+                            <x:String>500</x:String>
+                            <x:String>750</x:String>
+                            <x:String>1000</x:String>
+                        </Picker.Items>
+                    </Picker>   
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>
