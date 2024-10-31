@@ -18,6 +18,7 @@ public partial class VRegistro : ContentPage
         montoInicialEntry.Text = cuotaMensual.ToString("F2");
     }
 
+
     private void OnVerResumenClicked(object sender, EventArgs e)
     {
         // Aquí puedes implementar la navegación al resumen.
